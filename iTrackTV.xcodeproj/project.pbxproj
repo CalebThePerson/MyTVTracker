@@ -15,7 +15,8 @@
 		C3270F1424B2975000398216 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3270F1324B2975000398216 /* Preview Assets.xcassets */; };
 		C3270F1724B2975000398216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3270F1524B2975000398216 /* LaunchScreen.storyboard */; };
 		C3270F2224B29B4600398216 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3270F2124B29B4600398216 /* TabBar.swift */; };
-		C380C54924C514590008EA12 /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C380C54824C514580008EA12 /* ShowView.swift */; };
+		C380C54B24C542B20008EA12 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C380C54A24C542B10008EA12 /* API.swift */; };
+		C380C54D24C542BB0008EA12 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C380C54C24C542BB0008EA12 /* MyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,8 @@
 		C3270F1624B2975000398216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3270F1824B2975000398216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3270F2124B29B4600398216 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		C380C54824C514580008EA12 /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
+		C380C54A24C542B10008EA12 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C380C54C24C542BB0008EA12 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				C3270F0E24B2974B00398216 /* ContentView.swift */,
-				C380C54824C514580008EA12 /* ShowView.swift */,
 				C3270F2124B29B4600398216 /* TabBar.swift */,
 			);
 			path = UI;
@@ -125,6 +126,8 @@
 		C3270F2024B2989200398216 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C380C54A24C542B10008EA12 /* API.swift */,
+				C380C54C24C542BB0008EA12 /* MyData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,11 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C380C54924C514590008EA12 /* ShowView.swift in Sources */,
 				C3270F0B24B2974B00398216 /* AppDelegate.swift in Sources */,
 				C3270F0D24B2974B00398216 /* SceneDelegate.swift in Sources */,
 				C3270F0F24B2974B00398216 /* ContentView.swift in Sources */,
+				C380C54D24C542BB0008EA12 /* MyData.swift in Sources */,
 				C3270F2224B29B4600398216 /* TabBar.swift in Sources */,
+				C380C54B24C542B20008EA12 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

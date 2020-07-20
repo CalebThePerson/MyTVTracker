@@ -9,7 +9,7 @@
 
 // user key - 5ED05945A9A4E8.97984150
 // api key - a588d1f036c267171ba06a3af627fed9
-
+//Option command P
 
 
 import SwiftUI
@@ -24,17 +24,27 @@ struct ContentView: View {
             // To remove only extra separators below the list:
             UITableView.appearance().tableFooterView = UIView()
         }
-
+        
         // To remove all separators including the actual ones:
         UITableView.appearance().separatorStyle = .none
     }
-
+    
     var body: some View {
-        List{
-            Text("Welpo Kelpo")
-            ShowView()
-
+        
+        GeometryReader { geometry in
+            
+            List {
+                
+            ShowView(ScreenSize: geometry.size, ImageName: "Aang")
+            ShowView(ScreenSize: geometry.size, ImageName: "Noice")
+            ShowView(ScreenSize: geometry.size, ImageName: "DXD")
+                }
+            .frame(alignment: .center)
+//            Spacer()
+            .offset(x: -13)
         }
+        
+        
         
     }
 }
@@ -44,3 +54,20 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+//MARK: - Outsourced Stuff
+struct ShowView: View {
+    let ScreenSize: CGSize
+    let ImageName: String
+    
+    var body: some View {
+        ZStack{
+            Image(ImageName)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: ScreenSize.width - 14, height: 107)
+                .clipped()
+        }
+    }
+}
+
