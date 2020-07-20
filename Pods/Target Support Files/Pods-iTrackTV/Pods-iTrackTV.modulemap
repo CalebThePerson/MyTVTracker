@@ -1,0 +1,6 @@
+framework module Pods_iTrackTV {
+  umbrella header "Pods-iTrackTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

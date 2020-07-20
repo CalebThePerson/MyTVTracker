@@ -6,6 +6,6 @@ target 'iTrackTV' do
   use_frameworks!
 
   # Pods for iTrackTV
-  pod install RealmSwift
+  pod 'RealmSwift'
 
 end
